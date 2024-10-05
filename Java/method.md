@@ -31,18 +31,13 @@ String  String name = "Alice";
 ```
 - 同じデータ型の場合まとめて宣言可```int height, old;```
 ### var 型推論
+- データ型が異なる場合再代入は不可
 ```
 var number = 10;   // int型として推測される
 var name = "Alice";  // String型として推測される
+number = 20  //int型なので再代入可
+name = 20  //int型の値をString型に代入できない
 ```
-## int ○○ = 150;
-- ○○に整数値を紐づける
-- ○○に150を代入
-- ○○に再代入をする場合intは不要
-## double ○○ = 1.1
-- ○○が小数点を含む変数の場合
 ## final double ○○ = 1.1
 - 変数○○の再代入を禁止
 - 値を再代入できない変数は「定数」。○○を大文字で記述
-## String ○○ = ken
-- 変数○○が文字列
