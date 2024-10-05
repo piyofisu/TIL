@@ -38,9 +38,10 @@ var name = "Alice";  // String型として推測される
 number = 20  //int型なので再代入可
 name = 20  //int型の値をString型に代入できない
 ```
-## final double ○○ = 1.1
-- 変数○○の再代入を禁止
-- 値を再代入できない変数は「定数」。○○を大文字で記述
+## 変数の定数化```final double TAX = 1.1```
+- 変数taxの再代入を禁止
+- taxを大文字で記述
+- 先に宣言だけしておいて後からの代入もできる
 ## フォーマット指定子
 - 文字列の中に変数の値を埋め込むために使用
 - String.format() や System.out.printf()で使用
