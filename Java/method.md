@@ -41,3 +41,14 @@ name = 20  //int型の値をString型に代入できない
 ## final double ○○ = 1.1
 - 変数○○の再代入を禁止
 - 値を再代入できない変数は「定数」。○○を大文字で記述
+## フォーマット指定子
+- 文字列の中に変数の値を埋め込むために使用
+- String.format() や System.out.printf()で使用
+- ```%s```:文字列(String) ```%d```:整数(int) ```%f```: 浮動小数点数 (float, double) ```%c```: 単一の文字 (char) ```%n```: 改行 ```%%```: パーセント記号
+```
+String name = "Alice";
+int age = 30;
+double height = 1.75;
+System.out.printf("Name: %s, Age: %d, Height: %.2f meters%n", name, age, height);
+Name: Alice, Age: 30, Height: 1.75 meters
+```
