@@ -10,6 +10,31 @@
 ## //
 - 1行の場合は//から行末までがコメント
 - ショートカットキーはctrl + /
+## 変数の宣言
+### データ型と変数名の指定```データ型 変数名;```
+- プリミティブ型(基本データ型)
+```
+byte  -128	127	小さな整数
+short  -32,768	32,767	小規模な整数
+int  -2^31	2^31-1	標準的な整数
+long  -2^63	2^63-1	大きな整数
+float  -	-	単精度小数点数
+double  -	-	倍精度小数点数
+char  0	65,535 (Unicode)	文字
+boolean  false	true	真偽値
+```
+- 参照型
+```
+String  String name = "Alice";
+配列  int[] numbers = {1, 2, 3};
+クラス  Person person = new Person();
+```
+- 同じデータ型の場合まとめて宣言可```int height, old;```
+### var 型推論
+```
+var number = 10;   // int型として推測される
+var name = "Alice";  // String型として推測される
+```
 ## int ○○ = 150;
 - ○○に整数値を紐づける
 - ○○に150を代入
