@@ -29,7 +29,14 @@ String  String name = "Alice";
 配列  int[] numbers = {1, 2, 3};
 クラス  Person person = new Person();
 ```
-- 同じデータ型の場合まとめて宣言可```int height, old;```
+- 同じデータ型の変数が複数の場合まとめて宣言可```int height, old;```
+- 一度変数のデータ型を宣言するとその変数にはデータ型が異なる値は代入できない
+```
+int age = 15;
+ ○  age = 30;
+ ×  age = 30.5;
+ ×  age = "30years";
+```
 ### var 型推論
 - データ型が異なる場合再代入は不可
 ```
