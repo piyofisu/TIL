@@ -45,6 +45,23 @@ var name = "Alice";  // String型として推測される
 number = 20  //int型なので再代入可
 name = 20  //int型の値をString型に代入できない
 ```
+## 配列の宣言
+```
+int[] scores; // 配列のデータ型と変数名
+scores = new int[3]; // 何個の値を管理したいのか指定、3個
+```
+もしくは
+```
+int[] scores = new int[3];
+scores[0] = 70;
+scores[1] = 90;
+scores[2] = 80;
+```
+更に簡単に
+```
+int[] scores = {70, 90, 80};
+```
+
 ## 変数の定数化```final double TAX = 1.1```
 - 変数taxの再代入を禁止
 - taxを大文字で記述
