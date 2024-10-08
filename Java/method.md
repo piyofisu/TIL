@@ -1,4 +1,4 @@
-## Public static void main(String[] args)
+## public class Main{ public static void main(String[] args){}}
 - Javaの実行に必須のメソッド
 ## System.out.println()
 - 標準出力
@@ -45,6 +45,17 @@ var name = "Alice";  // String型として推測される
 number = 20  //int型なので再代入可
 name = 20  //int型の値をString型に代入できない
 ```
+### 基本データ型と参照型の違い
+- 変数に格納される値が異なる
+```
+- 基本データ型
+int a = 10;
+PC上にaという領域が確保されそこに値10が格納される
+- 参照型
+int[] x = {70, 80};
+PC上にxという領域が確保されるが、参照型のデータは大きくなりがちなので別に新たに領域が確保され値はそちらに格納
+xにはその値がどこにあるか、の情報のみが格納される
+```
 ## 配列の宣言
 ```
 int[] scores; // 配列のデータ型と変数名
@@ -61,7 +72,19 @@ scores[2] = 80;
 ```
 int[] scores = {70, 90, 80};
 ```
-
+## 多重配列
+- 複数の配列を1つの配列にまとめる
+```
+int[] firstYearScores = {70, 90, 80};
+int[] secondYearScores = {60, 50, 70};
+int[][] scores = {{70, 90, 80}, {60, 50, 70}};
+```
+- 1つの要素を取り出す
+```
+System.out.println(scores[1][0]);
+結果
+60
+```
 ## 変数の定数化```final double TAX = 1.1```
 - 変数taxの再代入を禁止
 - taxを大文字で記述
