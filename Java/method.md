@@ -1,7 +1,7 @@
 ## Public static void main(String[] args)
 - Javaの実行に必須のメソッド
 ## System.out.println()
-- 引数の出力
+- 標準出力
 ## ;
 - 命令の区切り
 ## /*  */
