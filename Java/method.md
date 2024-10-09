@@ -2,6 +2,19 @@
 - Javaの実行に必須のメソッド
 ## System.out.println()
 - 標準出力
+## 入力された文字列の受け取り
+- データと機能をセットにしたオブジェクトを変数に割り当てて呼び出す
+```java
+import java.until.*; // 1行目に
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String text = scan.next()
+        System.out.println(text);
+    }
+}
+```
 ## ;
 - 命令の区切り
 ## /*  */
