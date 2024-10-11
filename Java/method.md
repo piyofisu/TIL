@@ -15,6 +15,19 @@ public class Main {
     }
 }
 ```
+## 入力された整数の受け取り
+- 変数名は受け取るデータの種類に合わせてつける
+```java
+import java.until.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        System.out.println(number);
+    }
+}
+```
 ## ;
 - 命令の区切り
 ## /*  */
@@ -116,3 +129,12 @@ double height = 1.75;
 System.out.printf("Name: %s, Age: %d, Height: %.2f meters%n", name, age, height);
 Name: Alice, Age: 30, Height: 1.75 meters
 ```
+## 条件分岐
+```
+if (条件式) {
+    処理;
+}els if(条件式) {
+    処理;
+}else{
+    処理;
+}
