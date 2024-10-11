@@ -1,35 +1,5 @@
 ## public class Main{ public static void main(String[] args){}}
 - Javaの実行に必須のメソッド
-## System.out.println()
-- 標準出力
-### println
-- 出力内容を改行付きで表示
-## 入力された文字列の受け取り
-- データと機能をセットにしたオブジェクトを変数に割り当てて呼び出す
-```java
-import java.until.*; // 1行目に
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String text = scan.next()
-        System.out.println(text);
-    }
-}
-```
-## 入力された整数の受け取り
-- 変数名は受け取るデータの種類に合わせてつける
-```java
-import java.until.*;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int number = scan.nextInt();
-        System.out.println(number);
-    }
-}
-```
 ## ;
 - 命令の区切り
 ## /*  */
