@@ -119,3 +119,10 @@ if (name.equals("Java")) {
  System.out.println("Hello " + name);
 }
 ```
+## 繰り返し処理```for```
+- 以下は処理を3回繰り返し
+```
+for (int i = 0; i < 3; i ++) {
+ 処理;
+}
+```
