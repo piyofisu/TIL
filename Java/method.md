@@ -110,3 +110,12 @@ if (条件式) {
 }else{
     処理;
 }
+```
+## 文字列の一致```変数.equals("〇〇")```
+- ```equals```は変数が括弧内文字列○○と一致するか判定する
+- ifと組み合わせてみる
+```
+if (name.equals("Java")) {
+ System.out.println("Hello " + name);
+}
+```
