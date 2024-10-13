@@ -134,6 +134,7 @@ for (int i = 0; i < 3; i++) {
 double rand = Math.random();
 ```
 - 小数点以下を切り捨て1～100の整数値を得る
+- 下記では何個の数から1つを選ぶのか(0-100)```* 100```、選ばれる数値がいくつから始まるのか指定(1)```+ 1```
 ```java
 double rand = Math.random() * 100 + 1;
 int number = (int)rand;
