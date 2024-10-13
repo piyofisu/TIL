@@ -138,3 +138,5 @@ double rand = Math.random();
 double rand = Math.random() * 100 + 1;
 int number = (int)rand;
 ```
+上記(int)は自身に続く変数の値を整数型に変換するという意味
+型変換やキャストと呼ぶ
