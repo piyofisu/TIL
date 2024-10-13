@@ -142,3 +142,21 @@ int number = (int)rand;
 上記(int)は自身に続く変数の値を整数型に変換するという意味
 型変換やキャストと呼ぶ
 - 50～99を生成したい場合は```* 49 + 50```
+## 処理の優先順位・範囲の指定
+- ```int apple_num = (int)(Math.random()* 10 + 1);```Math以下を()内に入れることで個数を求めてから整数に型変換する
+  - ()に入れないと何度実行しても1個で出力される
+- ```int apple_price = (int)(Math.random() * 3 + 1) * 100;```単価を100,200,300のランダムにしたい時```* 3```で生成される個数を決めて```+ 1```で1～3が選ばれるように指定```* 100```で単価を決める
+```java
+public class Main {
+	public static void main(String[] args) {
+		int apple_price = (int)(Math.random() * 3 + 1) * 100;// apple_price リンゴの単価
+		int apple_num = (int)(Math.random()* 10 + 1);// apple_num リンゴを買う数
+		
+		System.out.println("リンゴの単価：" + apple_price + "円");
+		System.out.println("リンゴを買う数：" + apple_num + "個");
+		
+		int total = apple_price * apple_num;
+		System.out.println("合計金額：" + total + "円");
+	}
+}
+```
