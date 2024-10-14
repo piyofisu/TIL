@@ -105,7 +105,7 @@ Name: Alice, Age: 30, Height: 1.75 meters
 ```java
 if (条件式) {
     条件が成立した時の処理;
-}els if(条件式) {
+}else if(条件式) {
     条件が成立した時の処理;
 }else{
     条件が成立しなかった時の処理;
