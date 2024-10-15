@@ -87,7 +87,7 @@ System.out.println(scores[1][0]);
 60
 ```
 ## 変数の定数化```final double TAX = 1.1```
-- 変数taxの再代入を禁止
+- double型変数taxの再代入を禁止
 - taxを大文字で記述
 - 先に宣言だけしておいて後からの代入もできる
 ## フォーマット指定子
