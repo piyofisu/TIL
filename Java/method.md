@@ -101,15 +101,6 @@ double height = 1.75;
 System.out.printf("Name: %s, Age: %d, Height: %.2f meters%n", name, age, height);
 Name: Alice, Age: 30, Height: 1.75 meters
 ```
-## 繰り返し処理```for (カウンタ変数; 繰り返し条件; カウンタ変数の増減)```
-- 以下は処理を3回繰り返し
-- ```i```はカウンタ変数、慣習により```i```や```j```を使う
-- ```i++```により処理が1回終わるごとに増えていく
-```java
-for (int i = 0; i < 3; i++) {
- 処理;
-}
-```
 ## 乱数の生成```Math.random```
 - 0.0以上1.0未満のランダムな数値が返される
 ```java
