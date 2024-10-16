@@ -101,27 +101,6 @@ double height = 1.75;
 System.out.printf("Name: %s, Age: %d, Height: %.2f meters%n", name, age, height);
 Name: Alice, Age: 30, Height: 1.75 meters
 ```
-## 条件分岐
-```java
-if (条件式) {
-    条件式が成立した時の処理;
-}else if(条件式2) {
-    条件式2が成立した時の処理;
-}else{
-    条件が成立しなかった時の処理;
-}
-```
-### 複数の条件
-- AND ```&&```
-- OR ```||```
-## 文字列の一致```変数.equals("〇〇")```
-- ```equals```は変数が括弧内文字列○○と一致するか判定する
-- ifと組み合わせてみる
-```java
-if (name.equals("Java")) {
- System.out.println("Hello " + name);
-}
-```
 ## 繰り返し処理```for (カウンタ変数; 繰り返し条件; カウンタ変数の増減)```
 - 以下は処理を3回繰り返し
 - ```i```はカウンタ変数、慣習により```i```や```j```を使う
